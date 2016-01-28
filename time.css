@@ -81,11 +81,14 @@ p {
     border: 2px solid;
 }
 
-li {
+ul {
     list-style-type: none;
     font-size: 14px;
     padding-top: 5px;
-    visibility: hidden;
+}
+
+.hide {
+    visibility:hidden;
 }
 
 #class {

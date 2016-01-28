@@ -6,6 +6,8 @@
 $(document).ready(function () {
     console.log("ready");
     
+    
+    //tool tips
     //hide tool tip
     $('h5').hide();
     
@@ -42,29 +44,28 @@ $(document).ready(function () {
     //click funtions
     //see details --> reveals list of times and activities
     
-    
     // show class list 
     $('#class p').click(function () {
-        $('#class li').css('visibility','visible')/*.animate({height:'toggle'})*/;
-        return false;
+        $('.class-list').toggleClass('hide')/*css('visibility','visible').animate({height:'toggle'})*/;
+        
     });
 
     // show home list
     $('#home p').click(function () {
-        $('#home li').css('visibility', 'visible')/*.animate({height:'toggle'})*/;
-        return false;
+        $('.home-list').toggleClass('hide')/*css('visibility', 'visible').animate({height:'toggle'})*/;
+        
     });
 
     
     // show work list
     $('#work p').click(function () {
-        $('#work li').css('visibility', 'visible')/*.animate({height:'toggle'})*/;
-        return false;
+        $('.work-list').toggleClass('hide')/*css('visibility', 'visible').animate({height:'toggle'})*/;
+        
     });
 
     // show transit list
     $('#transit p').click(function () {
-        $('#transit li').css('visibility', 'visible')/*.animate({height:'toggle'})*/;
-        return false;
+        $('.transit-list').toggleClass('hide')/*css('visibility', 'visible').animate({height:'toggle'})*/;
+        
     });
 });
